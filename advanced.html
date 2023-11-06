@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body,
+        html {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .link {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #4285f4;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        .search-form {
+            text-align: left;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .google-logo {
+            margin-bottom: 20px;
+        }
+
+        .search-option {
+            margin-bottom: 10px;
+        }
+
+        .search-option label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .search-option input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-button {
+            margin-top: 10px;
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .search-button:hover {
+            background-color: #3367d6;
+        }
+    </style>
+    <title>Advanced Search</title>
+</head>
+
+<body>
+
+    <div class="link">
+        <a href="./index.html">Google Search</a>
+    </div>
+    <div class="search-form">
+        <img class="google-logo"
+            src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+            alt="Google Search">
+        <form action="https://google.com/search">
+            <div class="search-option">
+                <label for="all-words">Find pages with... "all these words:"</label>
+                <input type="text" id="all-words" name="as_q">
+            </div>
+            <div class="search-option">
+                <label for="exact-phrase">Find pages with... "this exact word or phrase:"</label>
+                <input type="text" id="exact-phrase" name="as_epq">
+            </div>
+            <div class="search-option">
+                <label for="any-words">Find pages with... "any of these words:"</label>
+                <input type="text" id="any-words" name="as_oq">
+            </div>
+            <div class="search-option">
+                <label for="none-words">Find pages with... "none of these words:"</label>
+                <input type="text" id="none-words" name="as_eq">
+            </div>
+            <input class="search-button" type="submit" value="Google Advanced Search">
+        </form>
+    </div>
+</body>
+
+</html>
